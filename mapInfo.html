@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>视频专网GIS平台</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/table.css">
+</head>
+<body>
+<!-- 页眉区块 header -->
+<div id="header">
+	<div id="headerLeft">
+		<img src="images/logo.png" alt="image">
+		<nav>视频专网GIS平台</nav> 
+	</div>
+	<div id="headerRight">
+      <nav><a href=""><img src="images/home.png" alt="image">首页</a></nav>
+	  <nav><a href=""><img src="images/admin.png" alt="image">admin</a></nav>
+	  <nav><a href="">[退出]</a></nav> 
+    </div>
+</div>
+<!-- 主内容区块 content -->
+<div id="content">
+	<div id="row">
+	    <!-- 左侧栏sidebar -->
+		<div id="sidebar">
+			<nav>
+				<ul>
+					<a href="personManager.html"><li>人员管理<img class="right" src="images/right.png" alt=""></li></a>
+					<a href="GISManagerPower.html"><li>权限管理<img class="right" src="images/right.png" alt=""></li></a>
+					<a href="pendingManager.html"><li>审核管理<img class="right" src="images/right.png" alt=""></li></a>
+					<a href="personInfo.html"><li>人员信息库<img class="right" src="images/right.png" alt=""></li></a>
+					<a href="carInfo.html"><li>车辆信息库<img class="right" src="images/right.png" alt=""></li></a>
+					<a href="mapInfo.html"><li class="selected">地图信息库<img class="right" src="images/dbright.png" alt=""></li></a>
+				</ul>
+			</nav>
+		</div>
+		<!-- 右主体内容块main -->
+		<div id="main">
+		    <div id="main-header">
+            <nav id="nav1">
+            <input id="input" type="button" value="导入">
+            <input class="other" type="button" value="录入">
+            <input class="other" type="button" value="导出">
+            </nav>
+		    </div>
+		    <form class="mapform" action="">
+				<p class="heading">增加兴趣点</p>
+				<div class="formRow">
+				  <p>兴趣点名称</p>
+				  <p><input type="text"></p>
+				</div>
+				<div class="formRow">
+				  <p>增加兴地址</p>
+				  <p><input type="text"></p>
+				</div>
+				<div class="formRow">
+				  <p>附件标准</p>
+				  <p><input type="text"></p>
+				</div>
+				<div class="formRow">
+				  <p>精确地址</p>
+				  <p><input type="text"></p>
+				</div>
+				<div class="formRow">
+				<p></p>
+				<p></p>
+				<div id="submit">
+					<input type="submit" name="" value="保存">
+				</div>
+
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- 页尾footer -->
+<div id="footer">
+	&copy; 2012, Starbuzz Coffee
+	<br>
+	All trademarks and registered trademarks appearing on 
+	this site are the property of their respective owners.
+</div>
+<script src="./js/main.js" ></script>
+</body>
+</html>
+</body>
+</html>

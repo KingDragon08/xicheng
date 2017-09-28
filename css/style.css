@@ -1,0 +1,298 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+  	font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:small;
+    margin:0px;
+    background-color: #F8F8FF;
+  }
+  /*页眉样式*/
+  #header{
+  	height: 76px;
+  	background-color: #6495ED;
+  	overflow: auto; 
+    zoom: 1; /*处理兼容性问题*/
+  }
+  #headerLeft{
+  	float: left;
+  	position: relative;
+  	top:10px;
+  	left: 20px;
+  	text-align: center;
+  	font-size: 2.2em;
+  	color: #fff;
+  }
+  #headerLeft  img{
+  	position: relative;
+  	top:8px;
+  	padding-right: 20px; 
+  }
+  #headerRight{
+  	float: right;
+  	position: relative;
+  	top:26px;
+  	right: 20px;
+  }
+
+  #headerLeft nav,#headerRight nav{
+  	display: inline;
+  	padding-right: 32px;
+  }
+  #headerRight nav a{
+  	color: #fff;
+  }
+  #headerRight nav img{
+  	padding-right: 10px; 
+  }
+  /*主区块CSS表格布局样式*/
+  div#content{
+    display: table;
+    width:100%;
+    border-spacing: 10px;
+    clear: right;
+  }
+  div#row{
+    display: table-row;
+  }
+  /*左侧栏样式*/
+  #sidebar {
+    display: table-cell;
+    font-size:        105%;
+    border:1px solid #DCDCDC;
+    width:20%;
+    height: 620px;
+    background-color: #fff;
+    vertical-align: top;
+  }
+  /*侧栏无序列表样式*/
+  #sidebar nav{
+  	margin:0; padding:0;
+
+  }
+  #sidebar nav ul {
+  	margin:0; padding:0; 
+  	list-style:none;
+  }
+  #sidebar nav ul li {
+  	margin:0;
+  	padding: 20px 0px 20px 0px;
+  	border-bottom:1px solid #DCDCDC;
+  	text-align: center;
+
+  }
+  #sidebar nav ul li a:link,#sidebar nav ul li a:visited {
+  	border-bottom: none;
+  	font-weight: bold;
+
+  /*
+  	text-shadow: 1px 1px 3px #e2c2c2; 
+  	text-transform: uppercase;
+    */
+  }
+  #sidebar nav ul li.selected {
+  	border-left:3px solid blue;
+  }
+  #sidebar nav ul li:hover {
+  	background: #F8F8FF; 
+  }
+
+  a:link {
+    color:#b76666;
+    text-decoration:  none;
+  }
+  a:visited {
+    color:#675c47;
+    text-decoration:  none;
+  }
+  .right{
+  	float: right;
+  	padding-right: 16px;
+  }
+  /*右主区块样式*/
+  #main {
+    display: table-cell;
+    font-size:1.05em;
+    border:1px solid #DCDCDC;
+    background-color: #fff;
+    width: 80%;
+    height: 620px;
+    vertical-align: top;
+  }
+  /*carinfo 主区块头部样式*/
+  #main-header {
+    width:100%;
+    height: 40px;
+  }
+  #nav1{
+    float: left;
+  }
+  #nav2{
+    float: left;
+    padding: 8px 0 8px 16%;
+  }
+  #nav3{
+    float: left;
+    padding: 8px 4%;
+  }
+  #nav4{
+    float: right;
+    padding: 10px 10% 10px 10px ;
+  }
+
+  /*三个并排按钮*/
+  #input {
+  	padding: 10px 28px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: blue;
+    border-color: blue;  
+  }
+  #input:hover {
+  	background-color:#87CEEB;
+    border-color: #87CEEB;
+  }
+  .other{
+  	padding: 10px 28px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #333;
+    background-color: #87CEEB;
+    border-color: #87CEEB;
+  }
+  .other:hover {
+  	color: #fff;
+    background-color: blue;
+    border-color: blue;  
+  }
+  /*查询*/
+
+  .searchText{
+    height: 20px;
+    width:100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-color: #6495ED;
+  }
+  .search{ 
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc; 
+  }
+  .search:hover{
+    background-color: #87CEEB;
+    color:#fff;
+    border-color: #ccc;
+  }
+  /*carinfo 主区块页数样式*/
+  #pages{
+    float: bottom;
+    text-align: center;
+  }
+  #pages input[type='submit']{
+    display: inline-block;
+    padding: 2px 16px;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  #pages input[type='submit']:hover{
+    background-color: #87CEEB;
+    color:#fff;
+    border-color: #ccc;
+  }
+  /*mapinfo 表单*/
+  .mapform{
+  	display: table;
+  	width: 90%;
+  	padding: 30px;
+  }
+  div.formRow{
+  	display: table-row;
+  }
+  div.formRow p{
+  	display: table-cell;
+  	vertical-align: top;
+  }
+  div.formRow p:first-child{
+    text-align: right;
+    padding: 10px 0;
+  }
+  div.formRow p input[type='text']{
+  	height: 28px;
+    width:100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-color: #6495ED;
+  }
+  form p.heading{
+  	text-align: right;
+  	font-weight: bold;
+  	font-size: 1.2em;
+  	position: relative;
+  	left: -20px
+  }
+  /*mapinfo 查询圆边矩形*/
+
+  /*页尾样式*/
+  #footer {
+    background-color: #6495ED;
+    color: #fff;
+    text-align:       center;
+    padding:          15px;
+    font-size:        90%;
+  }
+
+
+
+

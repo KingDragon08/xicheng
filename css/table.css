@@ -1,0 +1,108 @@
+/*一般表样式*/
+table
+{
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:96%;
+  border-collapse:collapse;
+  margin: 2%;
+}
+table thead th{ 
+  font-size:1em;
+  padding:5px ;
+  text-align: center;
+}
+table tbody td{
+  font-size:1em;
+  border:1px solid #DCDCDC;
+  padding:5px ;
+  text-align: center;
+}
+/*多列数据表样式*/
+#table td
+{
+  font-size:1em;
+  border:1px solid #DCDCDC;
+  padding:30px ;
+  text-align: center;
+}
+
+#table td nav {
+	display: inline;
+	padding: 5px 0 5px 10px;
+}
+#table td nav a{
+  position: relative;
+  top:-5px;
+}
+
+/*按钮submit居中*/
+#submit{
+	text-align: center;
+}
+#submit input[type='submit']{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+/*数据表操作样式*/
+.edit {  
+  color: green;      
+  background-color: #FFFFFF;  
+  border: 0px none;  
+  font-family: "宋体";  
+  font-size: 1.2em;    
+}  
+.delete {  
+  color: red;      
+  background-color: #FFFFFF;  
+  border: 0px none;  
+  font-family: "宋体";  
+  font-size: 1.2em;    
+}  
+.edit:hover,.delete:hover{  
+  color:#DCDCDC;  
+  border: none;  
+  cursor: hand;  
+  cursor: pointer;  
+}  
+.edit:focus,.delete:focus {   
+  outline: none;    
+} 
+
+/*checkbox样式  */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  display: none
+}
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+label input[type="checkbox"]+span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(../images/checkbox.gif) no-repeat;
+  background-position: 0 0;
+  margin-right: 10px;
+}
+
+label input[type="checkbox"]:checked+span {
+  background-position: 0 -21px
+}
