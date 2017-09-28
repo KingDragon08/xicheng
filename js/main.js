@@ -3,6 +3,6 @@
    for(var i = 0;i<list.length;i++){
      list[i].onclick = function(){
       //将节点的颜色变成红色
-      this.style.border-bottom = "3px solid blue";
+      this.style.borderBottom = "3px solid blue";
 	}
 	}
